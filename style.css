@@ -1,0 +1,47 @@
+/* button {
+  margin: 0 auto;
+  display: block;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .buttons {
+  line-height: 300px;
+  height: 300px;
+  border: 3px solid green;
+  text-align: center;
+} */
+
+html {
+  height: 100%;
+}
+
+button {
+  font-size: large;
+  border-radius: 4.5px;
+  background-color: rgb(100, 100, 100);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* When you hover over button */
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* When you click on the button */
+button:active {
+  opacity: 1;
+  box-shadow: 0 5px #666;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
