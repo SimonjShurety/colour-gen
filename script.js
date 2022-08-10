@@ -13,11 +13,12 @@ function generateRandomColor() {
 }
 
 // Logs the hex code and writes it
-console.log(generateRandomColor());
 hexBtn.textContent = generateRandomColor();
+console.log(generateRandomColor());
 
 colourBtn.addEventListener("click", () => {
-  document.body.style.backgroundColor = generateRandomColor();
+  hexBtn.textContent = generateRandomColor();
+  document.body.style.backgroundColor = hexBtn.textContent;
 });
 
 // When you click the label
@@ -26,3 +27,10 @@ hexBtn.addEventListener("click", function () {
   navigator.clipboard.writeText(backgroundColorHexCode);
   alert("Copied!");
 });
+
+// let z = generateRandomColor();
+// document.body.style.backgroundColor = z;
+// hexBtn.textContent = z;
+
+hexBtn.textContent = generateRandomColor();
+document.body.style.backgroundColor = hexBtn.textContent;
