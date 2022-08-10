@@ -3,6 +3,7 @@
 const colourBtn = document.querySelector(".colour-btn");
 
 const hexLabel = document.querySelector(".hexLabel");
+console.log(hexLabel);
 
 //random color will be freshly served
 function generateRandomColor() {
@@ -12,9 +13,6 @@ function generateRandomColor() {
 // Logs the hex code and writes it
 console.log(generateRandomColor());
 hexLabel.textContent = generateRandomColor();
-
-// // Formats the hex code
-// backgroundColor = "." + ("000000" + backgroundColor).slice(-6);
 
 colourBtn.addEventListener("click", () => {
   document.body.style.backgroundColor = generateRandomColor();
