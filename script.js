@@ -2,7 +2,7 @@
 
 const colourBtn = document.querySelector(".colour-btn");
 
-const hexLabel = document.querySelector(".hexLabel");
+const hexBtn = document.querySelector(".hex-btn");
 console.log(hexLabel);
 
 const backgroundColorHexCode = generateRandomColor();
