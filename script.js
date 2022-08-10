@@ -5,6 +5,8 @@ const colourBtn = document.querySelector(".colour-btn");
 const hexLabel = document.querySelector(".hexLabel");
 console.log(hexLabel);
 
+const backgroundColorHexCode = generateRandomColor();
+
 //random color will be freshly served
 function generateRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -21,6 +23,6 @@ colourBtn.addEventListener("click", () => {
 // When you click the label
 hexLabel.addEventListener("click", function () {
   // Copies To Clipboard
-  navigator.clipboard.writeText(backgroundColor);
+  navigator.clipboard.writeText(backgroundColorHexCode);
   alert("Copied!");
 });
